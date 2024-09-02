@@ -43,25 +43,7 @@ function App() {
     `,
         output: "7",
         date: "2024-09-01",
-        topic: "Algorithm"  // Added topic
-      },
-
-     {
-        id: 3,
-        question: "Find the largest of array?",
-        code: `def Findlarge(arr):
-        large = 0
-        for i in arr:
-            if large<i:
-                large = i
-        return large
-    
-    arr = [1,2,3,5,7,9]
-    print(Findlarge(arr))
-    `,
-        output: "9",
-        date: "2024-09-01",
-        topic: "array"  // Added topic
+        topic: "Array"  // Added topic
       },
     ];
     
