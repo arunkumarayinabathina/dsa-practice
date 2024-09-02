@@ -1,0 +1,178 @@
+/* App.css */
+.App {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px; /* Increased max-width for larger screens */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #6c5b7b; /* Purple background for the header */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between search fields */
+  margin-bottom: 30px;
+}
+
+.search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  font-size: 18px;
+  border: 2px solid #8e44ad; /* Darker purple */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.search-input:focus {
+  border-color: #9b59b6; /* Lighter purple */
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slightly scale up on focus */
+}
+
+.search-input::placeholder {
+  color: #b0bec5; /* Light gray placeholder text */
+  opacity: 1; /* Ensure full opacity */
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-card {
+  background-color: #6c5b7b; /* Purple background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.question-card pre {
+  background-color: #2c3e50; /* Darker background for code block */
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 1rem;
+  color: #ecf0f1; /* Light gray text */
+}
+
+.question-card p {
+  background-color: #4a4a4a; /* Darker gray background for output */
+  padding: 10px;
+  border-radius: 8px;
+  color: #dcdcdc; /* Light gray text for output */
+  margin-top: 15px;
+}
+
+.question-date {
+  font-size: 1rem;
+  color: #ffffff; /* White color for date */
+  margin-top: 10px;
+  font-style: italic; /* Italicize date */
+}
+
+.no-questions {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .App {
+    padding: 15px;
+    max-width: 1000px; /* Adjusted max-width for medium-large screens */
+  }
+
+  .search-input {
+    font-size: 16px;
+  }
+
+  .question-card {
+    padding: 15px;
+  }
+
+  .question-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .App {
+    padding: 10px;
+    max-width: 800px; /* Adjusted max-width for medium screens */
+  }
+
+  .search-input {
+    font-size: 15px;
+  }
+
+  .question-card {
+    padding: 10px;
+  }
+
+  .question-card h3 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 5px;
+    max-width: 100%; /* Full width for small screens */
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .question-card {
+    padding: 10px;
+  }
+
+  .question-card h3 {
+    font-size: 1rem;
+  }
+
+  .question-date {
+    font-size: 0.875rem;
+  }
+}
+
+.question-output {
+  background-color: #4a4a4a; /* Darker gray background */
+  padding: 10px;
+  border-radius: 8px;
+  color: #dcdcdc; /* Light gray text */
+  white-space: pre-wrap; /* Preserve new lines and spaces */
+  margin-top: 15px;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 10px 0;
+  border-bottom: 1px solid #9b59b6; /* Light purple underline */
+  padding-bottom: 5px;
+}
