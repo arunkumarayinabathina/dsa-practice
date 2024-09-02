@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "question": "Find the largest of array?",
+      "code": "def Findlarge(arr):\n  large = 0\n  for i in arr:\n    if large<i:\n      large = i\n  return large\n\narr = [1,2,3,5,7,9]\nprint(Findlarge(arr))",
+      "output": "9",
+      "date": "2024-09-01",
+      "topic": "Array"
+    },
+    {
+      "id": 2,
+      "question": "Find the second largest element?",
+      "code": "def Secondlarge(arr):\n  large = 0\n  secondLarge = 0\n  for i in arr:\n    if large<i:\n      secondLarge = large\n      large = i\n  return secondLarge\n\narr = [1,2,3,5,7,9]\nprint(Secondlarge(arr))",
+      "output": "7",
+      "date": "2024-09-01",
+      "topic": "Algorithm"
+    }
+  ]
+  
