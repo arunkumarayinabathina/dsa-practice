@@ -72,15 +72,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     
     arr = [1,2,3,5,7,9]
     print(Secondlarge(arr))
-    `,output:"7",date:"2024-09-01",topic:"Algorithm"},{id:3,question:"Find the second largest element?",code:`def Secondlarge(arr):
-        large = 0
-        secondLarge = 0
-        for i in arr:
-            if large<i:
-                secondLarge = large
-                large = i
-        return secondLarge
-    
-    arr = [1,2,3,5,7,9]
-    print(Secondlarge(arr))
-    `,output:"7",date:"2024-09-10",topic:"Algorithm"}].filter(l=>{const c=l.question.toLowerCase().includes(e.toLowerCase()),p=l.topic.toLowerCase().includes(n.toLowerCase()),g=l.date.includes(a);return c&&p&&g});return ae.jsxs("div",{className:"App",children:[ae.jsx("h1",{children:"Coding Questions"}),ae.jsx(ID,{searchTerm:e,setSearchTerm:t,searchTopic:n,setSearchTopic:r,searchDate:a,setSearchDate:i}),ae.jsx(ND,{questions:s})]})}qv(document.getElementById("root")).render(ae.jsx(jt.StrictMode,{children:ae.jsx(kD,{})}));
+    `,output:"7",date:"2024-09-01",topic:"Algorithm"}].filter(l=>{const c=l.question.toLowerCase().includes(e.toLowerCase()),p=l.topic.toLowerCase().includes(n.toLowerCase()),g=l.date.includes(a);return c&&p&&g});return ae.jsxs("div",{className:"App",children:[ae.jsx("h1",{children:"Coding Questions"}),ae.jsx(ID,{searchTerm:e,setSearchTerm:t,searchTopic:n,setSearchTopic:r,searchDate:a,setSearchDate:i}),ae.jsx(ND,{questions:s})]})}qv(document.getElementById("root")).render(ae.jsx(jt.StrictMode,{children:ae.jsx(kD,{})}));
