@@ -46,7 +46,7 @@ function App() {
         topic: "Algorithm"  // Added topic
       },
       {
-        id: 2,
+        id: 3,
         question: "Find the second largest element?",
         code: `def Secondlarge(arr):
         large = 0
@@ -61,7 +61,7 @@ function App() {
     print(Secondlarge(arr))
     `,
         output: "7",
-        date: "2024-09-01",
+        date: "2024-09-10",
         topic: "Algorithm"  // Added topic
       }
     ];
